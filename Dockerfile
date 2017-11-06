@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:carbon
 
 MAINTAINER Dylan Pinn <dylan@arcadiandigital.com.au>
 
