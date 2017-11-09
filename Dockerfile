@@ -21,5 +21,9 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
     && apt-get purge --auto-remove -y curl \
     && rm -rf /src/*.deb
 
+# Install AWS CLI
+RUN apt-get update && apt-get install -y python-dev python-pip \
+    && pip install awscli
+
 WORKDIR /workspace
 
