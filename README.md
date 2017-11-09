@@ -3,5 +3,7 @@
 Docker Image to build NodeJS Apps
 
 Includes:
+
 - yarn
 - Pupppeteer (dependencies)
+- awscli
