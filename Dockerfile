@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:boron
 
 LABEL maintainer "Dylan Pinn <dylan@arcadiandigital.com.au>"
 
