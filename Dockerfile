@@ -25,5 +25,8 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
 RUN apt-get update && apt-get install -y python-dev python-pip \
     && pip install awscli
 
+# Allow bower to run as root
+RUN echo '{ "allow_root": true }' > /root/.bowerrc
+
 WORKDIR /workspace
 
