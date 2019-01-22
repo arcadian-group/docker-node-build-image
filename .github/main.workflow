@@ -1,7 +1,6 @@
 workflow "New workflow" {
   on = "push"
   resolves = [
-    "Hadolint",
     "Build image",
     "Hello World",
   ]
@@ -10,11 +9,6 @@ workflow "New workflow" {
 action "Build image" {
   uses = "actions/docker/cli@c08a5fc9e0286844156fefff2c141072048141f6"
   runs = "docker build ."
-}
-
-action "Hadolint" {
-  uses = "actions/docker/cli@c08a5fc9e0286844156fefff2c141072048141f6"
-  runs = "docker run --rm -i hadolint/hadolint < Dockerfile"
 }
 
 action "Hello World" {
