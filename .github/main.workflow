@@ -3,6 +3,7 @@ workflow "New workflow" {
   resolves = [
     "Hadolint",
     "Build image",
+    "Hello World",
   ]
 }
 
@@ -18,4 +19,9 @@ action "Hadolint" {
 
 action "Lint" {
   uses = "./lint/"
+}
+
+action "Hello World" {
+  uses = "./.github/lint"
+  args = "Hi"
 }
