@@ -2,7 +2,7 @@ workflow "New workflow" {
   on = "push"
   resolves = [
     "Build image",
-    "burdzwastaken/hadolint-action@master",
+    "Lint",
   ]
 }
 
@@ -11,7 +11,7 @@ action "Build image" {
   runs = "docker build ."
 }
 
-action "burdzwastaken/hadolint-action@master" {
+action "Lint" {
   uses = "burdzwastaken/hadolint-action@master"
   secrets = ["GITHUB_TOKEN"]
 }
