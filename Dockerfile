@@ -25,5 +25,8 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
 RUN apt-get update && apt-get install -y python-dev python-pip \
     && pip install awscli
 
+# Install Sentry CLI
+RUN npm install -g @sentry/cli --unsafe-perm
+
 WORKDIR /workspace
 
