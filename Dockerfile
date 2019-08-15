@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:dubnium
 
 LABEL maintainer "Dylan Pinn <dylan@arcadiandigital.com.au>"
 
