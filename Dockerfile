@@ -1,4 +1,4 @@
-FROM node
+FROM node:fermium
 
 LABEL maintainer "Dylan Pinn <dylan@arcadiandigital.com.au>"
 
