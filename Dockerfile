@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && \
 # Note: this installs the necessary libs to make the bundled version of Chromium that Pupppeteer
 # installs, work.
 RUN apt-get update && apt-get install -y wget --no-install-recommends \
+    && apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com \
     && wget -q -O - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt-get update \
     && apt-get install -y ./google-chrome-stable_current_amd64.deb \
