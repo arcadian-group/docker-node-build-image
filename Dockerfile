@@ -1,6 +1,6 @@
 FROM node:fermium
 
-LABEL maintainer "Dylan Pinn <dylan@arcadiandigital.com.au>"
+LABEL maintainer "Sean Gilmore <sean@arcadiandigital.com.au>"
 
 # Global install yarn package manager
 RUN apt-get update && apt-get install -y curl apt-transport-https && \
