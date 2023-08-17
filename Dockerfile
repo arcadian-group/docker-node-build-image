@@ -22,8 +22,11 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
     && rm -rf /src/*.deb
 
 # Install AWS CLI
-RUN apt-get update && apt-get install -y python-dev-is-python3 python3-pip \
-    && pip install awscli
+RUN apt-get update && apt-get install -y python3-dev python3-pip python3-venv
+
+# Create a virtual environment and activate it
+RUN python3 -m venv venv
+RUN . venv/bin/activate && pip install awscli
 
 # Install Sentry CLI
 RUN npm install -g @sentry/cli --unsafe-perm
