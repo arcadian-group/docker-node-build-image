@@ -1,6 +1,6 @@
-FROM node:fermium
+FROM node:hydrogen
 
-LABEL maintainer "Sean Gilmore <sean@arcadiandigital.com.au>"
+LABEL maintainer "Arcadian Digital <clients+docker@arcadiandigital.com.au>"
 
 # Global install yarn package manager
 RUN apt-get update && apt-get install -y curl apt-transport-https && \
