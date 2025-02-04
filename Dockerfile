@@ -1,4 +1,4 @@
-FROM node:hydrogen
+FROM node:jod
 
 LABEL maintainer "Arcadian Digital <clients+docker@arcadiandigital.com.au>"
 

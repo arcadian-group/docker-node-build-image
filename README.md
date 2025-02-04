@@ -1,7 +1,7 @@
 # Docker Node Build Image
 
 Docker Image to build NodeJS Apps
-Supported Node Version: Hydrogen (Node v18)
+Supported Node Version: Jod (Node v22)
 
 ```bash
 docker pull arcadiandigital/node-build-image
